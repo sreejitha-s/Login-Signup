@@ -30,6 +30,7 @@
                                 Forgot password
                             </Hyperlink>
                         </TextBlock>
+                        <Label></Label>
                     </StackPanel>
                     <Button Background="Blue" FontWeight="Bold" Foreground="White" Height="37">LOG IN</Button>
                     <Label HorizontalAlignment="Center" Margin="0,10,0,10" VerticalAlignment="Center" FontSize="9">Or log in using</Label>
