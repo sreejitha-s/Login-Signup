@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\quest\source\repos\login1\login1\obj\Debug\netcoreapp3.1\
+D:\login-signup\login1\login1\obj\Debug\netcoreapp3.1\
 login1
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\quest\source\repos\login1\login1\App.xaml
-11407045341
+D:\login-signup\login1\login1\App.xaml
+2-1518940937
 
-3-1233169557
+4-1725897589
 192-1533232326
-MainWindow.xaml;
+MainWindow.xaml;SignUp.xaml;
 
 False
 

@@ -7,49 +7,54 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Border BorderBrush="DarkBlue" BorderThickness="10">
-        <Grid>
+        <Grid Margin="5,-2,-5,2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="4*"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
                 <Label Content="BoardMe" Background="White" Foreground="Blue" FontWeight="Bold" FontSize="16" Margin="12"/>
-                <StackPanel Margin="0,50,60,50" >
+                <StackPanel Width="370">
+                    <StackPanel Margin="0,50,60,50" Width="250" >
 
-                    <Label HorizontalAlignment="Center" Content="Log in to Your Account" Foreground="Black"  FontSize="16" FontWeight="Bold" Width="188"/>
-                    <TextBlock TextAlignment="Center" Text="Log in to your account so you can continue building and editing your onboarding flows" Height="40" Width="288" TextWrapping="Wrap"/>
-                    <Label>Email</Label>
-                    <TextBox x:Name="emailAddress" Height="30"></TextBox>
-                    <Label>Password</Label>
-                    <TextBox x:Name="password" Height="30"></TextBox>
-                    <StackPanel Orientation="Horizontal" Height="30">
-                        <CheckBox Name="rememberMe" Margin="0,7,0,0"></CheckBox>
-                        <Label>Remember Me</Label>
-                        <TextBlock Margin="100,5,0,0">           
+                        <Label HorizontalAlignment="Center" Content="Log in to Your Account" Foreground="Black"  FontSize="12" FontWeight="Bold"/>
+                        <TextBlock FontSize="9" TextAlignment="Center" Text="Log in to your account so you can continue building and editing your onboarding flows." Margin="0,8" Width="208" TextWrapping="Wrap"/>
+                        <Label FontSize="11" FontWeight="DemiBold">Email</Label>
+                        <TextBox x:Name="emailAddress" Height="25" BorderBrush="LightGray" Margin="5,0"></TextBox>
+                        <Label FontSize="11" FontWeight="DemiBold">Password</Label>
+                        <TextBox x:Name="password" Height="25" BorderBrush="LightGray" Margin="5,0"></TextBox>
+                        <StackPanel Orientation="Horizontal" Height="30">
+                            <CheckBox BorderBrush="LightGray" Name="rememberMe" Margin="5,7,0,0"></CheckBox>
+                            <Label FontSize="10">Remember Me</Label>
+                            <TextBlock Margin="75,5,0,0" FontSize="10">           
                             <Hyperlink NavigateUri="http://www.google.com" RequestNavigate="Hyperlink_RequestNavigate">
                                 Forgot password
                             </Hyperlink>
-                        </TextBlock>
-                        <Label></Label>
-                    </StackPanel>
-                    <Button Background="Blue" FontWeight="Bold" Foreground="White" Height="37">LOG IN</Button>
-                    <Label HorizontalAlignment="Center" Margin="0,10,0,10" VerticalAlignment="Center" FontSize="9">Or log in using</Label>
-                    <StackPanel Orientation="Horizontal">
-                        <Button Margin="35,0,0,0" Width="40" Height="20">
-                            <Image Source="google1.png" Width="15"></Image>
-                        </Button>
-                        <Button Margin="50,0,50,0" Width="40" Height="20">
-                            <Image Source="fb.png" Width="15"></Image>
-                        </Button>
-                        <Button Width="40" Height="20">
-                            <Image Source="twitter.png" Width="15"></Image>
-                        </Button>
+                            </TextBlock>
+                        </StackPanel>
+                        <Button Background="Blue" FontWeight="Bold" Foreground="White" Height="30">LOG IN</Button>
+                        <Label Foreground="Gray" HorizontalAlignment="Center" Margin="0,7,0,9.5" VerticalAlignment="Center" FontSize="9">Or log in using</Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Margin="50,0,0,0" Width="40" Height="20" Background="White" BorderBrush="LightGray">
+                                <StackPanel>
+                                    <Image Source="/google1.png" Width="15"></Image>
+                                </StackPanel>
+                            </Button>
+                            <Button Margin="15,0,15,0" Width="40" Height="20" Background="White" BorderBrush="LightGray">
+                                <Image Source="/fb.png" Width="15"></Image>
+                            </Button>
+                            <Button Width="40" Height="20" Background="White" BorderBrush="LightGray">
+                                <Image Source="/twitter.png" Width="15"></Image>
+                            </Button>
+                        </StackPanel>
                     </StackPanel>
                 </StackPanel>
-                <StackPanel Background="Blue" Orientation="Vertical">
-                    <Label HorizontalContentAlignment="Center" Foreground="White" FontWeight="Bold"  Margin="0,170,0,0" Content="Don't Have an Account Yet?"/>
-                    <TextBlock Margin="0,20" TextAlignment="Center" Width="320" Text="Let's get you all set up so you can start creating your first onboarding experience." TextWrapping="Wrap" Foreground="white"/>
-                    <Button Content="Sign Up" Foreground="White" Width="90" Height="25" Background="blue" BorderBrush="White" BorderThickness="2"/>
+                <StackPanel Background="Blue" Orientation="Vertical" Width="300">
+                    <StackPanel>
+                    <Label HorizontalContentAlignment="Center" Foreground="White" FontWeight="DemiBold"  Margin="0,170,0,0" Content="Don't Have an Account Yet?"/>
+                    <TextBlock Margin="0,20" FontSize="9" TextAlignment="Center" Width="250" Text="Let's get you all set up so you can start creating your first onboarding experience." TextWrapping="Wrap" Foreground="white"/>
+                    <Button Content="SIGN UP" Foreground="White" Width="90" Height="25" Background="blue" BorderBrush="White" BorderThickness="1" Click="Button_Click"/>
+                </StackPanel>
                 </StackPanel>
             </StackPanel>
         </Grid>
