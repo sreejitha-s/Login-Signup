@@ -28,5 +28,16 @@ namespace login1
             Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
             e.Handled = true;
         }
+        private void CloseAllWindows()
+        {
+            for (int intCounter = App.Current.Windows.Count - 1; intCounter >= 0; intCounter--)
+                App.Current.Windows[intCounter].Hide();
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindowShow = new MainWindow();
+            CloseAllWindows();
+            mainWindowShow.Show();
+        }
     }
 }

@@ -8,10 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Border BorderBrush="DarkBlue" BorderThickness="10">
         <Grid Margin="5,-2,-5,2">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="4*"/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
+            
             <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
                 <Label Content="BoardMe" Background="White" Foreground="Blue" FontWeight="Bold" FontSize="16" Margin="12"/>
                 <StackPanel Width="370">
